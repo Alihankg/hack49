@@ -1,101 +1,114 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	return (
+		<>
+			<div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+				<header className="container mx-auto px-4 py-6 flex justify-between items-center">
+					<div className="flex items-center space-x-2">
+						<Image
+							src="/SecureChain_logo.jpeg"
+							alt="logo"
+							height={100}
+							width={100}
+						/>
+						<span className="text-2xl">SecureChain</span>
+					</div>
+					<div>
+						<ul className="flex gap-8 items-center">
+							<li className="rounded-full bg-teal-600 px-8 py-2">
+								<Link href="/login" />
+								Login
+							</li>
+							<li>Sign Up</li>
+						</ul>
+					</div>
+				</header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+				<main>
+					<section className="container mx-auto px-4 py-20 text-center">
+						<div>
+							<h1 className="text-5xl font-bold mb-6">
+								Secure File Sharing with Blockchain
+							</h1>
+							<p className="text-xl mb-10 max-w-2xl mx-auto">
+								Experience unparalleled security and efficiency in file sharing
+								with SecureChain&apos;s innovative blockchain technology.
+							</p>
+						</div>
+					</section>
+
+					<section id="how-it-works" className="bg-gray-800 py-20">
+						<div className="container mx-auto px-4">
+							<h2 className="text-3xl font-bold mb-10 text-center">
+								How It Works
+							</h2>
+							<div className="max-w-3xl mx-auto">
+								<ol className="relative border-l border-teal-500">
+									<Step
+										number={1}
+										title="Upload your file"
+										description="Securely upload your file to our platform."
+									/>
+									<Step
+										number={2}
+										title="Blockchain encryption"
+										description="Your file is encrypted and stored on the blockchain."
+									/>
+									<Step
+										number={3}
+										title="Share securely"
+										description="Generate a secure link to share with your intended recipients."
+									/>
+									<Step
+										number={4}
+										title="Access control"
+										description="Manage permissions and revoke access at any time."
+									/>
+								</ol>
+							</div>
+						</div>
+					</section>
+
+					<section
+						id="contact"
+						className="container mx-auto px-4 py-20 text-center">
+						<h2 className="text-3xl font-bold mb-6">Ready to get started?</h2>
+						<p className="text-xl mb-10">
+							Join SecureChain today and experience the future of secure file
+							sharing.
+						</p>
+						<button className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-colors">
+							Sign Up Now
+						</button>
+					</section>
+				</main>
+
+				<footer className="bg-gray-900 py-6">
+					<div className="container mx-auto px-4 text-center text-gray-400">
+						<p>&copy; 2024 SecureChain. All rights reserved.</p>
+					</div>
+				</footer>
+			</div>
+		</>
+	)
 }
+
+const Step = ({
+	number,
+	title,
+	description,
+}: {
+	number: number
+	title: string
+	description: string
+}) => (
+	<li className="mb-10 ml-6">
+		<span className="absolute flex items-center justify-center w-8 h-8 bg-teal-500 rounded-full -left-4 ring-4 ring-gray-900 text-white">
+			{number}
+		</span>
+		<h3 className="font-medium leading-tight">{title}</h3>
+		<p className="text-sm text-gray-400">{description}</p>
+	</li>
+)

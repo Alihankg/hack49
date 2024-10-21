@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project aims to achieve secure and fast file sharing p2p in an innovative way through blockchain technology.
 
-## Getting Started
+**SecureChain Project Overview**
 
-First, run the development server:
+SecureChain is a platform where users can save and share their files through blockchain with low gas fees. The saved files are encrypted and can only be accessed by private and public keys, making them more secure.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Technology & Framework**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project will be built on the Layer 1 ecosystems IPFS & Etherium. For UI/UX we utilize the most modern web frameworks like React.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Features**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The users will be able to save their files through blockchain across multiple servers. They will be encrypted and distributed into multiple different servers. Because they are encrypted there won't be any privacy leakage and data retrieval will also become secure.
 
-## Learn More
+The web app will have a user-friendly UI that enhances user experience and satisfaction.
 
-To learn more about Next.js, take a look at the following resources:
+**Milestones**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+As for now, we haven't added any interactive function to the web application. But there will be user accounts that are anonymous and a dashboard for files and other features.
